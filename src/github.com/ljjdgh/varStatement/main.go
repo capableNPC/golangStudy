@@ -22,7 +22,7 @@ var (
 	date  string
 )
 
-func good() (float64, string) {
+func goods() (float64, string) {
 	return 1.1, "2020-01-01"
 }
 
@@ -34,7 +34,7 @@ func main() {
 	fmt.Println(number)
 	str := "12.1" //简短变量声明，仅在函数内部使用
 	fmt.Printf(str)
-	totalPrice, _ := good() //_为匿名变量，它不占用命名空间且不分配内存，表示忽略值
+	totalPrice, _ := goods() //_为匿名变量，它不占用命名空间且不分配内存，表示忽略值
 	fmt.Println("totalPrice: ", totalPrice)
 	name = "user"
 	age = 10
